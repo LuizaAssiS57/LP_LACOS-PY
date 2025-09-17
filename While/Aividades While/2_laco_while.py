@@ -2,6 +2,8 @@ import streamlit as st
 
 st.title("ATIVIDADE 2 | LAÇO DE REPETIÇÃO - WHILE")
 
+st.write("Escreva um algoritmo que solicite duas notas para um aluno. Caso seja menor que 0 ou maior que 10, mostre a pergunta novamente. Calcule e mostre a média aritmética do aluno.")
+
 QNT_NOTAS = 2
 soma = 0
 
