@@ -1,6 +1,9 @@
 import os
 os.system('cls')
 
+print("ATIVIDADE 6 | LAÇO DE REPETIÇÃO - WHILE")
+print("Faça um algoritmo que mostre um menu com opções de um cardápio de restaurante para uma pessoa. A pessoa vai escolher o prato desejado. Após escolher o prato, o algoritmo deve perguntar ao usuário se ele deseja escolher outro prato. Calcule quanto deve ser pago pelo cliente.")
+
 vlr_total = 0
 
 while True:

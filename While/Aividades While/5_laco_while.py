@@ -7,21 +7,21 @@ print("\nEscreva um algoritmo que leia três notas de um aluno. Caso seja menor 
 tentativas = 0
 soma = 0
 nota = 0
+TOTAL_NOTAS = 3
 
-#for i in range(4):
+for i in range(TOTAL_NOTAS):
+    while True:
+        if tentativas >= 4:
+            break
+        nota = float(input(f"Informe a {i+1}° nota: "))
+            
+        if 0 <= nota <= 10:
+            soma += nota
+            break
+        else:
+            print("A nota deve ser entre 0 ou 10.")
 
-while True:
-    if tentativas >= 4:
-        break
-    nota = float(input(f"Informe a {nota+1}° nota: "))
-        #nota = float(input(f"INFORME A {i+1}° NOTA: ", min_value=0, max_value=10))
-    if nota < 0 or nota > 10:
-        print("A nota deve ser entre 0 ou 10.")
-        break
-        
-    soma =+ nota
-
-media = soma / 4
+media = soma / TOTAL_NOTAS
 
 if media >= 7:
     status = "aprovado"
@@ -30,7 +30,7 @@ elif media >= 5:
 else:
     status = "reprovado"
 
-print(f"MÉDIA: {media}")
+print(f"MÉDIA: {media:.2f}")
 print(f"O aluno está {status}")
 
 # Streamlit version
