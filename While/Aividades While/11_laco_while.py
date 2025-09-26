@@ -37,7 +37,7 @@ while True:
         os.system('cls')
         print("----- CADASTRO DE FAMILIAS -----")
         salario = float(input("Salário da família: R$ "))
-        numero_de_filhos = int(input("Núemro de filhos: "))
+        numero_de_filhos = int(input("Número de filhos: "))
         salarios.append(salario)
         filhos.append(numero_de_filhos)
         os.system('cls')

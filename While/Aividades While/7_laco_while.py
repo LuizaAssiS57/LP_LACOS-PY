@@ -6,12 +6,14 @@ print("Escreva um algoritmo que pergunte ao usuário se deseja inserir mais uma 
 
 qnt_nota = 0
 soma = 0
+contador = 0
 
 while True:
     nota = float(input("Informe a nota do aluno: "))
 
     soma += nota
     qnt_nota += 1
+    contador += 1
 
     media = soma / qnt_nota
 
@@ -21,3 +23,4 @@ while True:
         break
 
 print(f"Média: {media:.2f}")
+print(f"Quantidade de notas: {contador}")

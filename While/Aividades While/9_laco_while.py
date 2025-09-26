@@ -32,8 +32,17 @@ if par > 0:
 else:
     media_par = 0
 
+media_par = soma_par / par if par != 0 else 0
+media_geral = soma_geral / qnt_numero if qnt_numero != 0 else 0
+
 media_geral = soma_geral / qnt_numero
 
-print(f"Números par: {par}\nNúmeros ímpar: {impar}")
-print(f"Média dos números pares: {media_par:.2f}")
-print(f"Média geral: {media_geral:.2f}")
+print(f"""
+Números par: {par}
+Números ímpar: {impar}
+Média dos números pares: {media_par:.2f}
+Média geral: {media_geral:.2f}
+""")
+# print(f"Números par: {par}\nNúmeros ímpar: {impar}")
+# print(f"")
+# print(f"")
