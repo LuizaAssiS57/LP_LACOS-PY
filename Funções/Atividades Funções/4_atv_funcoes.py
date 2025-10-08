@@ -1,13 +1,13 @@
 import os
 os.system('cls')
 
-reultado = 0
+# ATIVIDADE 4 | Funções
 
-def tabuada(numero):
-    print("=Tabuada=")
-    for i in range(1,11):
-        resultado = numero * i
-        print(f"{numero} x {i} = {resultado}")
+def positivo_negativo(numero):
+    if numero < 0:
+        print("O número é negatvo.")
+    else:
+        print("O número é positivo.")
 
 numero = int(input("Digite um número: "))
-tabuada(numero)
+positivo_negativo(numero)

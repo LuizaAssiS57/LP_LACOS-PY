@@ -1,11 +1,16 @@
 import os
 os.system('cls')
 
-def positivo_negativo(numero):
-    if numero < 0:
-        print("O número é negatvo.")
-    else:
-        print("O número é positivo.")
+# ATIVIDADE 3 | Funções
 
-numero = int(input("Digite um número: "))
-positivo_negativo(numero)
+# Crie uma função  que receba um número e mostre uma
+# mensagem informando se o número é par ou ímpar.
+
+def par_ou_impar(numero):
+    if numero % 2 == 0:
+        print("O número é par.")
+    else:
+        print("O número é ímpar.") 
+        
+numero = float(input("Digite um número: "))
+par_ou_impar(numero)

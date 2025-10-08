@@ -1,6 +1,19 @@
 import os
 os.system('cls')
 
+# ATIVIDADE 5 | Funções
+
+# Escreva um programa que permita receber do usuário duas
+# notas de um aluno e usando duas funções: 
+
+
+# - Informe por meio de uma função a média;
+
+
+# - Informe por meio de uma função se a média for maior ou
+# igual a 7, o aluno estará aprovado, caso contrário, estará
+# reprovado.
+
 QNT_NOTAS = 2
 soma = 0
 
