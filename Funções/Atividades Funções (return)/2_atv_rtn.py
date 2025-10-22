@@ -1,3 +1,8 @@
+# Crie funções que recebam 2 números e retorne a soma,
+# subtração, divisão e a multiplicação destes dois números
+# informados.
+# Obs.: Crie uma função para cada operação.
+
 import os
 import time
 

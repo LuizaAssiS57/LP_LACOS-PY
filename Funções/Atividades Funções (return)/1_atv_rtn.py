@@ -1,3 +1,6 @@
+# Crie uma função que receba 2 números e mostre uma
+# mensagem com a média destes dois números informados.
+
 import os
 import time
 

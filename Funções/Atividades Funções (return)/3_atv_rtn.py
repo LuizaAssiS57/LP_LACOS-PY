@@ -1,3 +1,4 @@
+# Fazer um programa que solicita um valor em metros e por meio de uma função, retorna o correspondente em centímetros.
 import os
 os.system('cls')
 

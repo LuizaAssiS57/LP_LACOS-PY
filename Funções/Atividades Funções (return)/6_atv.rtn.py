@@ -1,3 +1,7 @@
+# Escreva um programa que permita ler 3 notas de
+# um aluno, usando laço de repetição e informe por
+# meio de uma função a média;
+
 import os
 os.system('cls')
 
