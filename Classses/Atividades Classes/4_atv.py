@@ -1,0 +1,37 @@
+import os
+from dataclasses import dataclass
+os.system('cls')
+
+@dataclass
+class Pessoa:
+    nome: str
+    email: str
+    endereco: str
+
+    def mostrar_dados(self):
+        print(f"Nome: {self.nome}")
+        print(f"E-mail: {self.email}")
+        print(f"Endereço: {self.endereco}\n")
+
+    def mostrar_somente_nome(self):
+        print(f"Nome: {self.nome}")
+
+print("\n===== SOLICITANDO DADOS =====")
+
+lista_pessoas = []
+
+for i in range(2):
+    pessoa = Pessoa(nome= input("\nDigite seu nome: "),
+                    email= input("Digite seu E-mail: "),
+                    endereco= input("Digite seu endereço: "))
+    lista_pessoas.append(pessoa)
+    
+
+os.system('cls')
+print(" =+ DADOS DA PESSOA += ")
+for pessoa in lista_pessoas:
+    pessoa.mostrar_dados()
+
+print("\n+++ NOME +++")
+for pessoa in lista_pessoas:
+    pessoa.mostrar_somente_nome()
