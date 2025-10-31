@@ -1,0 +1,12 @@
+Nome: Orgulho e Preconceito
+Autor: Jane Austen
+Categoria: Romance
+Preço: R$48.59
+Nome: It, a coisa
+Autor: Stephen King
+Categoria: Terror
+Preço: R$119.99
+Nome: Diario de uma paixão
+Autor: Nicholas Sparks
+Categoria: Romance
+Preço: R$39.99

@@ -1,0 +1,10 @@
+
+Nome: Luiza
+Idade: 21
+E-mail: luiza.assis@gmail.com
+Telefone: (71) 4002-8922
+
+Nome: Natalia
+Idade: 18
+E-mail: nate.nates@gmail.com
+Telefone: (71) 8888-9999
