@@ -1,6 +1,8 @@
 import os
 os.system("cls || clear")
 
+lista_clientes = []
+
 while True:
     print("""
             MENU
@@ -10,7 +12,6 @@ while True:
     DELETE | 4
     """)
 
-    lista_clientes = []
 
     codigo = int(input("Código: "))
 
