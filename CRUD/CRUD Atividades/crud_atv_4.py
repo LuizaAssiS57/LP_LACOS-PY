@@ -8,7 +8,7 @@ lista_alunos = []
 
 @dataclass
 class Endereco:
-    logarudouro: str
+    logradouro: str
     numero: int
     cidade: str
     estado: str
@@ -22,7 +22,7 @@ class Aluno:
     endereco: Endereco
 
     def mostrar_dados(self):
-        print(f"Nome: {self.nome} \nData de Nascimento: {self.nascimento} \nR.A.: {self.ra} \nCurso: {self.curso} \nEndereço: {self.endereco.logarudouro}, número {self.endereco.numero}, {self.endereco.cidade}-{self.endereco.estado}")
+        print(f"Nome: {self.nome} \nData de Nascimento: {self.nascimento} \nR.A.: {self.ra} \nCurso: {self.curso} \nEndereço: {self.endereco.logradouro}, número {self.endereco.numero}, {self.endereco.cidade}-{self.endereco.estado}")
 
 # Verificar se a lista está vazia
 def lista_esta_vazia(lista_alunos):
@@ -38,12 +38,12 @@ def adicionar_alunos(lista_alunos):
     nascimento = input('Data de Nascimento: ')
     ra = input('R.A.: ')
     curso = input('Curso: ')
-    endereco = Endereco(logarudouro= input("Digite o endereço: "),
+    endereco = Endereco(logradouro= input("Digite o endereço: "),
                                      numero= int(input("Informe o número: ")),
                                      cidade=input("Informe sua cidade: "),
                                      estado= input("Informe o estado: ").upper())
 
-    novo_aluno = Aluno(nome=nome, nascimento=nascimento, ra=ra, curso=curso, endereco=endereco.logarudouro, endereco=endereco.numero, endereco=endereco.cidade, endereco=endereco.estado)
+    novo_aluno = Aluno(nome=nome, nascimento=nascimento, ra=ra, curso=curso, endereco=endereco)
     lista_alunos.append(novo_aluno)
 
     print(f'\nAluno {nome} adicionado com sucesso!')
@@ -107,7 +107,7 @@ def atualizar_alunos(lista_alunos):
         print('\nDados atualizados com sucesso!')
 
     else:
-        print(f'\nCPF {ra_buscar} não encontrado.')
+        print(f'\nR.A. ({ra_buscar}) não encontrado no sistema.')
 
 # Excluir aluno
 def excluir_aluno(lista_alunos):
